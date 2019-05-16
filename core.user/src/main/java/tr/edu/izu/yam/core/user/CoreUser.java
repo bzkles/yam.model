@@ -34,31 +34,31 @@ public class CoreUser implements Serializable {
 	@Basic
 	@Column(name = "EMAIL", nullable = false)
 	private String email;
-	
+
 	@Basic
-	@Column(name = "PASSWORD", nullable = false)
-	private String encrypted;
+	@Column(name = "USERNAME", nullable = false)
+	private String userName;
 
 	@Basic
 	@Column(name = "ROLE", nullable = false)
 	private String role;
-	
-	@Basic
-	@Column(name = "USERNAME", nullable = false)
-	private String userName;
 
 	@Basic
 	@Column(name = "CLEAR", nullable = false)
 	private String clear;
 
 	@Basic
-	@Column(name = "STATUS", nullable = false)
-	private int status;
-	
+	@Column(name = "PASSWORD", nullable = false)
+	private String encrypted;
+
 	@Basic
 	@Column(name = "EXPIREDATE", nullable = true)
 	private Date expireDate;
-	
+
+	@Basic
+	@Column(name = "STATUS", nullable = false)
+	private int status;
+
 	public Long getId() {
 		return id;
 	}
@@ -91,12 +91,12 @@ public class CoreUser implements Serializable {
 		this.email = email;
 	}
 
-	public String getEncrypted() {
-		return encrypted;
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setEncrypted(String encrypted) {
-		this.encrypted = encrypted;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public String getRole() {
@@ -107,14 +107,6 @@ public class CoreUser implements Serializable {
 		this.role = role;
 	}
 
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-
 	public String getClear() {
 		return clear;
 	}
@@ -123,12 +115,12 @@ public class CoreUser implements Serializable {
 		this.clear = clear;
 	}
 
-	public int getStatus() {
-		return status;
+	public String getEncrypted() {
+		return encrypted;
 	}
 
-	public void setStatus(int status) {
-		this.status = status;
+	public void setEncrypted(String encrypted) {
+		this.encrypted = encrypted;
 	}
 
 	public Date getExpireDate() {
@@ -138,4 +130,15 @@ public class CoreUser implements Serializable {
 	public void setExpireDate(Date expireDate) {
 		this.expireDate = expireDate;
 	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+	
+	
+
 }
