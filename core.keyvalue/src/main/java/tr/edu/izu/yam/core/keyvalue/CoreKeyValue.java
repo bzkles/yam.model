@@ -44,64 +44,44 @@ public class CoreKeyValue implements Serializable {
 	@Column(name = "STATUS", nullable = true)
 	private String status;
 
-	@Basic
-	@Column(name = "CK_01", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_01", nullable = true)
 	private CoreKeyValue ck_01;
 
-	@Basic
-	@Column(name = "CK_02", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_02", nullable = true)
 	private CoreKeyValue ck_02;
 
-	@Basic
-	@Column(name = "CK_03", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_03", nullable = true)
 	private CoreKeyValue ck_03;
 
-	@Basic
-	@Column(name = "CK_04", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_04", nullable = true)
 	private CoreKeyValue ck_04;
 
-	@Basic
-	@Column(name = "CK_05", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_05", nullable = true)
 	private CoreKeyValue ck_05;
 
-	@Basic
-	@Column(name = "CK_06", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_06", nullable = true)
 	private CoreKeyValue ck_06;
 
-	@Basic
-	@Column(name = "CK_07", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_07", nullable = true)
 	private CoreKeyValue ck_07;
 
-	@Basic
-	@Column(name = "CK_08", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_08", nullable = true)
 	private CoreKeyValue ck_08;
 
-	@Basic
-	@Column(name = "CK_09", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_09", nullable = true)
 	private CoreKeyValue ck_09;
 
-	@Basic
-	@Column(name = "CK_10", nullable = true)
 	@ManyToOne
-	@JoinColumn(name="ID")
+	@JoinColumn(name = "CK_10", nullable = true)
 	private CoreKeyValue ck_10;
 
 	@Basic
