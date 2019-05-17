@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "core_keyvalue")
-public class CoreKeyValue implements Serializable {
+public class CoreKeyValue implements Serializable, IEntity  {
 
 	private static final long serialVersionUID = 3404264584217623947L;
 
