@@ -13,12 +13,14 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import tr.edu.izu.yam.core.base.IEntity;
+
 
 @Entity
 @Table (name="core_log")
 
 
-public class CoreLog implements Serializable {
+public class CoreLog implements Serializable, IEntity {
 
 
 	

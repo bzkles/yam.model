@@ -6,4 +6,11 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>core.log</artifactId>
+  	<dependencies>
+		<dependency>
+			<groupId>tr.edu.izu.yam</groupId>
+			<artifactId>core.base</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
 </project>
